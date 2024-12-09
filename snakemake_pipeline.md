@@ -54,6 +54,14 @@ conda create --name snakemake2 --clone snakemake
 conda install -n snakemake2 -c bioconda fastp
 ```
 
+# 2. Multiqc
+
+## 2.1 Create multiqc conda environment
+
+```
+
+```
+
 # Problems
 
 ## File corruption
@@ -67,3 +75,21 @@ md5sum /Volumes/easystore/CRios_RNAseq_7-2024/18048-200-06242024_155635-42276434
 ```
 md5sum: WARNING: 13231642 lines are improperly formatted
 ```
+
+## Multiqc analysis
+
+make conda environment
+
+```
+conda create -n multiqc multiqc -c defaults -c bioconda -c conda-forge
+```
+
+run on pcb and bkf fastqc results folder
+
+```
+multiqc results/fastqc -o results/multiqc
+```
+
+From pcb remove `035C_ER_0_S70_L007_R1_001`, `062C_NB_4_S137_L007_R1_001`, `077C_KC_6_S78_L007_R1_001, `091C_ER_6_S99_L007_R1_001`
+
+From bkf remove `001K_SC_0_S48_L007_R1_001`
