@@ -90,6 +90,6 @@ run on pcb and bkf fastqc results folder
 multiqc results/fastqc -o results/multiqc
 ```
 
-From pcb remove `035C_ER_0_S70_L007_R1_001`, `062C_NB_4_S137_L007_R1_001`, `077C_KC_6_S78_L007_R1_001, `091C_ER_6_S99_L007_R1_001`
+From pcb remove `035C_ER_0_S70_L007_R1_001`, `062C_NB_4_S137_L007_R1_001`, `077C_KC_6_S78_L007_R1_001`, `091C_ER_6_S99_L007_R1_001`
 
 From bkf remove `001K_SC_0_S48_L007_R1_001`
